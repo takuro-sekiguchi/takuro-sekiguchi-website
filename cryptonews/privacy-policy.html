@@ -1,105 +1,276 @@
-# 1. 収集する情報
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー - 仮想通貨ニュースアプリ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-本アプリは以下の方法で情報を取得・使用します：
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f8f9fa;
+        }
 
-【アプリが直接収集する情報】
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-- アプリの設定情報（テーマ設定など）をデバイス内にのみ保存
-- 仮想通貨ニュースを外部RSSフィードから自動取得
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
 
-【第三者サービスが収集する可能性がある情報】
+        h2 {
+            color: #34495e;
+            margin: 30px 0 15px 0;
+            font-size: 1.5em;
+            position: relative;
+            padding-left: 20px;
+        }
 
-- GoogleAdMob：広告ID、デバイス情報、アプリ使用状況
-- 位置情報（概算）、IPアドレス、Cookie等の識別子
-- 広告の表示・クリック履歴、アプリの利用パターン
+        h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 20px;
+            background-color: #3498db;
+            border-radius: 2px;
+        }
 
-# 2. 情報の使用目的
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
 
-収集した情報は以下の目的でのみ使用されます：
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
 
-- 最新の仮想通貨ニュースの提供
-- アプリの機能向上
-- 適切な広告の表示
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
 
-# 3. 第三者との情報共有
+        li {
+            margin-bottom: 8px;
+            position: relative;
+        }
 
-本アプリは、法律で要求される場合を除き、ユーザーの個人情報を第三者と共有することはありません。
+        li::marker {
+            color: #3498db;
+        }
 
-【使用している第三者サービス】
+        .highlight-box {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
 
-- Google AdMob（広告配信）
-- 各種広告ネットワーク（AdMob経由）
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
 
-【共有される可能性がある情報】
+        .info-box {
+            background-color: #f0f8ff;
+            border: 1px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
 
-- 広告配信の最適化のための匿名化された使用データ
-- 法執行機関からの正当な要求がある場合
+        a {
+            color: #3498db;
+            text-decoration: none;
+            word-break: break-all;
+        }
 
-# 4. データセキュリティ
+        a:hover {
+            text-decoration: underline;
+        }
 
-アプリ内で保存される設定情報は、デバイス内にのみ保存され、外部サーバーに送信されることはありません。
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 1px solid #dee2e6;
+        }
 
-# 5. ニュースソース
+        .last-updated {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
 
-本アプリは以下のニュースサイトからRSSフィードを取得しています：
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>プライバシーポリシー</h1>
+        
+        <p>本プライバシーポリシーは、仮想通貨ニュースアプリ（以下「本アプリ」）における個人情報の取り扱いについて定めたものです。</p>
 
-- CoinPost
-- CoinDesk Japan
-- CoinTelegraph Japan
-- CRYPTO TIMES
-- Investing.com
-- Cointelegraph
+        <h2>1. 収集する情報</h2>
+        <p>本アプリは以下の方法で情報を取得・使用します：</p>
+        
+        <h3>【アプリが直接収集する情報】</h3>
+        <ul>
+            <li>アプリの設定情報（テーマ設定など）をデバイス内にのみ保存</li>
+            <li>仮想通貨ニュースを外部RSSフィードから自動取得</li>
+        </ul>
 
-各ニュースの著作権は、それぞれの配信元に帰属します。
+        <h3>【第三者サービスが収集する可能性がある情報】</h3>
+        <ul>
+            <li>GoogleAdMob：広告ID、デバイス情報、アプリ使用状況</li>
+            <li>位置情報（概算）、IPアドレス、Cookie等の識別子</li>
+            <li>広告の表示・クリック履歴、アプリの利用パターン</li>
+        </ul>
 
-# 6. ユーザーの権利
+        <h2>2. 情報の使用目的</h2>
+        <p>収集した情報は以下の目的でのみ使用されます：</p>
+        <ul>
+            <li>最新の仮想通貨ニュースの提供</li>
+            <li>アプリの機能向上</li>
+            <li>適切な広告の表示</li>
+        </ul>
 
-ユーザーには以下の権利があります：
+        <h2>3. 第三者との情報共有</h2>
+        <p>本アプリは、法律で要求される場合を除き、ユーザーの個人情報を第三者と共有することはありません。</p>
 
-【データに関する権利】
+        <h3>【使用している第三者サービス】</h3>
+        <ul>
+            <li>Google AdMob（広告配信）</li>
+            <li>各種広告ネットワーク（AdMob経由）</li>
+        </ul>
 
-- 収集されたデータの確認・削除を要求する権利
-- 広告のパーソナライゼーションをオプトアウトする権利
-- アプリの削除により設定データを完全に削除する権利
+        <h3>【共有される可能性がある情報】</h3>
+        <ul>
+            <li>広告配信の最適化のための匿名化された使用データ</li>
+            <li>法執行機関からの正当な要求がある場合</li>
+        </ul>
 
-【オプトアウト方法】
+        <h2>4. データセキュリティ</h2>
+        <div>
+            <p>アプリ内で保存される設定情報は、デバイス内にのみ保存され、外部サーバーに送信されることはありません。</p>
+        </div>
 
-- iOS：設定 > プライバシー > 広告 >追跡型広告を制限
-- Google広告設定：[https://adssettings.google.com](https://adssettings.google.com/)
+        <h2>5. ニュースソース</h2>
+        <p>本アプリは以下のニュースサイトからRSSフィードを取得しています：</p>
+        <ul>
+            <li>CoinPost</li>
+            <li>CoinDesk Japan</li>
+            <li>CoinTelegraph Japan</li>
+            <li>CRYPTO TIMES</li>
+            <li>Investing.com</li>
+            <li>Cointelegraph</li>
+        </ul>
+        <p>各ニュースの著作権は、それぞれの配信元に帰属します。</p>
 
-# 7. 年齢制限
+        <h2>6. ユーザーの権利</h2>
+        <p>ユーザーには以下の権利があります：</p>
 
-本アプリは13歳以上のユーザーを対象としています。
-13歳未満のお子様の個人情報を意図的に収集することはありません。
+        <h3>【データに関する権利】</h3>
+        <ul>
+            <li>収集されたデータの確認・削除を要求する権利</li>
+            <li>広告のパーソナライゼーションをオプトアウトする権利</li>
+            <li>アプリの削除により設定データを完全に削除する権利</li>
+        </ul>
 
-13歳未満のお子様の情報が収集されていることが判明した場合、速やかに削除いたします。
+        <h3>【オプトアウト方法】</h3>
+        <div>
+            <ul>
+                <li>iOS：設定 > プライバシー > 広告 > 追跡型広告を制限</li>
+                <li>Google広告設定：<a href="https://adssettings.google.com">https://adssettings.google.com</a></li>
+            </ul>
+        </div>
 
-# 8. データ保存期間
+        <h2>7. 年齢制限</h2>
+        <div>
+            <p><strong>本アプリは13歳以上のユーザーを対象としています。</strong><br>
+            13歳未満のお子様の個人情報を意図的に収集することはありません。</p>
+            <p>13歳未満のお子様の情報が収集されていることが判明した場合、速やかに削除いたします。</p>
+        </div>
 
-【アプリ内データ】
+        <h2>8. データ保存期間</h2>
+        <h3>【アプリ内データ】</h3>
+        <ul>
+            <li>設定情報：アプリ削除まで</li>
+            <li>ニュースデータ：一時的にキャッシュ、定期的に更新</li>
+        </ul>
 
-- 設定情報：アプリ削除まで
-- ニュースデータ：一時的にキャッシュ、定期的に更新
+        <h3>【第三者サービス】</h3>
+        <ul>
+            <li>AdMob：Googleのプライバシーポリシーに準拠</li>
+            <li>詳細：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+        </ul>
 
-【第三者サービス】
+        <h2>9. ポリシーの更新</h2>
+        <p>本プライバシーポリシーは必要に応じて更新される場合があります。重要な変更がある場合は、アプリ内で通知いたします。</p>
 
-- AdMob：Googleのプライバシーポリシーに準拠
-- 詳細：https://policies.google.com/privacy
+        <h2>10. お問い合わせ</h2>
+        <div>
+            <p>アプリに関するご質問がございましたらお問い合わせください：</p>
+            <ul>
+                <li><a href="https://forms.gle/csZ1VUuL9Piw49Kb9">お問い合わせフォーム</li>
+            </ul>
+        </div>
 
-# 9. ポリシーの更新
+        <h2>【関連リンク】</h2>
+        <ul>
+            <li>Googleプライバシーポリシー：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+            <li>AdMobデータ使用：<a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a></li>
+        </ul>
 
-本プライバシーポリシーは必要に応じて更新される場合があります。重要な変更がある場合は、アプリ内で通知いたします。
-
-# 10. お問い合わせ
-
-プライバシーポリシーに関するご質問がございましたら、以下の方法でお問い合わせください：
-
-- App Storeのアプリページ経由
-- アプリ内のフィードバック機能
-
-# 【関連リンク】
-
-- Googleプライバシーポリシー：[https://policies.go](https://policies.go/)[ogle.com/privacy](http://ogle.com/privacy)
-- AdMobデータ使用：[https://support.google.com/admob/answer/6128543](https://support.google.com/adm)
-
-最終更新日: 2025年7月
+        <div class="last-updated">
+            <p>最終更新日: 2025年7月</p>
+        </div>
+    </div>
+</body>
+</html>
